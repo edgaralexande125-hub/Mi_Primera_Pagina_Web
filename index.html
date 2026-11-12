@@ -1,0 +1,296 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La importancia de la tecnología</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #263445;
+        }
+
+        /* MENU */
+        header {
+            background-color: #102a43;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* PORTADA */
+        .portada {
+            background: linear-gradient(120deg, #102a43, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .portada h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .portada p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 25px;
+            background-color: #38bdf8;
+            color: #102a43;
+            padding: 13px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background-color: white;
+        }
+
+        /* SECCIONES */
+        section {
+            padding: 55px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #1d4ed8;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        /* TARJETAS */
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .tarjeta {
+            background-color: white;
+            width: 280px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+            transition: transform 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-8px);
+        }
+
+        .tarjeta h3 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta p {
+            font-size: 15px;
+        }
+
+        .icono {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        /* BENEFICIOS */
+        .beneficios {
+            background-color: #dbeafe;
+        }
+
+        .beneficios ul {
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+            line-height: 2.2;
+            font-size: 17px;
+        }
+
+        /* PIE DE PAGINA */
+        footer {
+            background-color: #102a43;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* DISEÑO PARA CELULARES */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                display: inline-block;
+            }
+
+            .portada h1 {
+                font-size: 30px;
+            }
+
+            section {
+                padding: 40px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU PRINCIPAL -->
+    <header>
+        <h2>TECNOLOGÍA</h2>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#importancia">Importancia</a>
+            <a href="#usos">Usos</a>
+            <a href="#beneficios">Beneficios</a>
+        </nav>
+    </header>
+
+    <!-- PORTADA -->
+    <div class="portada" id="inicio">
+        <h1>La importancia de la tecnología</h1>
+
+        <p>
+            La tecnología forma parte de nuestra vida diaria.
+            Nos ayuda a comunicarnos, aprender, trabajar y descubrir
+            nuevas formas de mejorar nuestro mundo.
+        </p>
+
+        <a href="#importancia" class="boton">Conoce más</a>
+    </div>
+
+    <!-- IMPORTANCIA -->
+    <section id="importancia">
+        <h2>¿Por qué es importante?</h2>
+
+        <p>
+            La tecnología es una herramienta fundamental para
+            la sociedad actual. Gracias a sus avances podemos
+            realizar actividades de manera más rápida y sencilla.
+            También facilita el acceso a la información y permite
+            conectar a personas de diferentes partes del mundo.
+        </p>
+    </section>
+
+    <!-- USOS DE LA TECNOLOGIA -->
+    <section id="usos">
+        <h2>Principales usos de la tecnología</h2>
+
+        <div class="contenedor">
+
+            <div class="tarjeta">
+                <div class="icono">📚</div>
+                <h3>Educación</h3>
+                <p>
+                    Permite estudiar mediante plataformas digitales,
+                    consultar información y aprender nuevos temas
+                    desde cualquier lugar.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="icono">💻</div>
+                <h3>Trabajo</h3>
+                <p>
+                    Facilita las actividades laborales mediante
+                    computadoras, programas y herramientas digitales
+                    que mejoran la productividad.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="icono">📱</div>
+                <h3>Comunicación</h3>
+                <p>
+                    Ayuda a mantenernos en contacto con familiares,
+                    amigos y compañeros mediante mensajes,
+                    llamadas y videoconferencias.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="beneficios" id="beneficios">
+        <h2>Beneficios de la tecnología</h2>
+
+        <ul>
+            <li>Facilita la comunicación entre personas.</li>
+            <li>Permite obtener información rápidamente.</li>
+            <li>Ayuda en la educación y el aprendizaje.</li>
+            <li>Mejora diferentes actividades de trabajo.</li>
+            <li>Impulsa nuevos descubrimientos e innovaciones.</li>
+        </ul>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section>
+        <h2>Conclusión</h2>
+
+        <p>
+            En conclusión, la tecnología es muy importante porque
+            facilita muchas actividades de nuestra vida cotidiana.
+            Debemos aprender a utilizarla de manera responsable
+            para aprovechar sus ventajas y seguir mejorando
+            como sociedad.
+        </p>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <p>Proyecto escolar de HTML y CSS</p>
+        <p>La importancia de la tecnología | 2026</p>
+    </footer>
+
+</body>
+</html>
